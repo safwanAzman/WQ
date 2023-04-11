@@ -1,6 +1,7 @@
 import {useState,useEffect} from 'react';
 import { contact } from '@/data/contactData';
 import Image from 'next/image';
+import Call from '@/assets/call.png'
 
 export const Hubungi = ({onClick}) => {
 return (
@@ -14,7 +15,7 @@ return (
             <div className="flex items-center space-x-2">
                 <a className="" href={`tel:${item.phoneNo}`}>
                     <Image
-                        src="https://img.icons8.com/stickers/100/null/ringer-volume.png"
+                        src={Call}
                         alt="Vercel Logo"
                         className="w-10 h-10"
                         width={100}
