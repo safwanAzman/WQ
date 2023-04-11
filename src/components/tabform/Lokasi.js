@@ -1,5 +1,5 @@
 import {useState} from 'react';
-import { location } from '@/data/LocationData';
+import { location } from '@/data/locationData';
 
 
 export const Lokasi = ({onClick}) => {
