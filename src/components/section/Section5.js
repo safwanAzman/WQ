@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image';
-import Img1 from '@/assets/img1.JPG'
+import Img1 from '@/assets/img1.jpg'
 
 export const Section5 = () => {
     return (
