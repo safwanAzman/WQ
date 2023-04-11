@@ -43,8 +43,8 @@ export const Section2 = () => {
                         </div>
                         <div className="pt-4">
                         <h1>
-                            Menjemput Yang Berbahagia Tan Sri/ Puan Sri/ Dato' Seri/ 
-                            Datin Seri/ Dato’/ Datin/ Tuan/ Puan/ Encik/ Cik ke majlis
+                            Menjemput Yang Berbahagia Tan Sri/ Puan Sri/ Dato Seri/ 
+                            Datin Seri/ Dato/ Datin/ Tuan/ Puan/ Encik/ Cik ke majlis
                             perkahwinan putera kami
                         </h1>
                         </div>
