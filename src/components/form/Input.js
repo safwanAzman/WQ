@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Input = ({label,placeholder,type,extraLabel,inputmode}) => {
+export const Input = ({label,placeholder,type,extraLabel,inputmode,onChange,id}) => {
     return (
     <div className="mb-4">
         <label htmlFor={label} className="block text-xs font-medium text-gray-700">
@@ -10,10 +10,11 @@ export const Input = ({label,placeholder,type,extraLabel,inputmode}) => {
 
         <input
             type={type}
-            id={label}
+            id={id}
             placeholder={placeholder}
             className="form-style"
             inputMode={inputmode}
+            onChange={onChange}
         />
     </div>
     )

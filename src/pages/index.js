@@ -11,6 +11,7 @@ import { Section5 } from '@/components/section/Section5';
 import { Section6 } from '@/components/section/Section6';
 import { Section7 } from '@/components/section/Section7';
 import Swal from 'sweetalert2';
+import { ToastContainer } from 'react-toastify';
 
 
 
@@ -63,6 +64,7 @@ export default function Home() {
   return (
     <main className="flex justify-center min-h-screen bg-gray-100">
       <div className="container relative max-w-[26rem] p-0 mx-auto" >
+      <ToastContainer autoClose={3000}/>
         <div className="relative bg-white shadow-xl">
             <Audio
               isPlayingProp={isPlaying}
