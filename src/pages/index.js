@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { useRef,useState,useEffect } from 'react';
 import { Inter } from 'next/font/google';
 import { BottomTab } from '@/components/BottomTab';
@@ -22,32 +21,36 @@ export default function Home() {
   const [isPlaying, setIsPlaying] = useState(null);
 
   useEffect(() => {
-      const showConfirmationDialog = async () => {
-      const result = await Swal.fire({
+    const showConfirmationDialog = async () => {
+      try {
+        const result = await Swal.fire({
           html: `
-              <div>
-                  <h1 class="text-2xl font-bold">
-                      sila matikan<br>
-                      ~ DARK MODE ~
-                  </h1>
-                  <p class="pt-2 text-sm font-medium">pada “setting browser” anda untuk <span class="text-green-700"><br>TAMPILAN TERBAIK</span>, JIKA anda gunakan peranti :</p>
-                  <div class="border-y-[0.5px] p-4 flex items-center justify-center space-x-2 mt-4 text-sm font-bold text-orange-900 border-gray-400" >
-                      "Samsung | Vivo | Huawei | Oppo"
-                  </div>
-              </div> 
-          `,
+            <div>
+                <h1 class="text-2xl font-bold">
+                    sila matikan<br>
+                    ~ DARK MODE ~
+                </h1>
+                <p class="pt-2 text-sm font-medium">pada “setting browser” anda untuk <span class="text-green-700"><br>TAMPILAN TERBAIK</span>, JIKA anda gunakan peranti :</p>
+                <div class="border-y-[0.5px] p-4 flex items-center justify-center space-x-2 mt-4 text-sm font-bold text-orange-900 border-gray-400" >
+                    "Samsung | Vivo | Huawei | Oppo"
+                </div>
+            </div> 
+        `,
           icon: 'info',
           showCancelButton: false,
           confirmButtonText: 'Ok',
           cancelButtonText: 'No',
           allowOutsideClick: false,
-      });
-  
-          if (result.isConfirmed) {
-              handlePlay(); 
-          }
-      };
-      // showConfirmationDialog();
+        });
+
+        if (result.isConfirmed) {
+          handlePlay();
+        }
+      } catch (error) {
+
+      }
+    };
+    showConfirmationDialog();
   }, []);
 
   

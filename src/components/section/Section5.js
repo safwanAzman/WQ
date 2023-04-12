@@ -59,7 +59,7 @@ export const Section5 = () => {
                         <Image
                             src={Img1}
                             alt="Vercel Logo"
-                            className="w-auto h-96"
+                            className="w-auto h-[23rem]"
                             width={500}
                             height={500}
                             priority
@@ -69,7 +69,7 @@ export const Section5 = () => {
                         <Image
                             src={Img2}
                             alt="Vercel Logo"
-                            className="w-auto h-96"
+                            className="w-auto h-[23rem]"
                             width={500}
                             height={500}
                             priority
@@ -79,7 +79,7 @@ export const Section5 = () => {
                         <Image
                             src={Img3}
                             alt="Vercel Logo"
-                            className="w-auto h-96"
+                            className="w-auto h-[23rem]"
                             width={500}
                             height={500}
                             priority
