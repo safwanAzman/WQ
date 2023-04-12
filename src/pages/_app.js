@@ -6,13 +6,14 @@ config.autoAddCss = false; // Tell Font Awesome to skip adding the CSS automatic
 import { useEffect } from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import 'react-responsive-carousel/lib/styles/carousel.min.css'; 
 
 export default function App({ Component, pageProps }) {
-  useEffect(() => {
-		AOS.init({
-			delay: 600,
-			duration: 800,
-		});
+useEffect(() => {
+	AOS.init({
+		delay: 600,
+		duration: 800,
 	});
-  return <Component {...pageProps} />
+});
+return <Component {...pageProps} />
 }

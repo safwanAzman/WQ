@@ -13,13 +13,13 @@ export const Section2 = () => {
             style={{ backgroundImage: `url(https://i.gifer.com/33Hn.gif)` }}
             >
             <div  className="flex flex-col items-center justify-center text-center">
-                <div className="px-12 py-2">
+                <div className="px-8 py-2">
                     <div data-aos="fade-down" data-aos-delay="400">
                     <Image
                         src={Bismillah}
                         alt="Vercel Logo"
-                        className="w-auto h-40"
-                        width={50000}
+                        className=''
+                        width={500}
                         height=''
                         priority
                     />

@@ -4,6 +4,9 @@ const nextConfig = {
 }
 
 module.exports = {
+  images: {
+    domains: ['source.unsplash.com'],
+  },
   webpack: (config) => {
     config.module.rules.push({
       test: /\.(mp3|mp4)$/,

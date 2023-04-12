@@ -12,7 +12,7 @@ export const BottomTab = () => {
         <>
             { tab !== '2' && tab !== '3' && tab !== '4' ?
             <>
-            <div className="sticky z-50 border-8 border-transparent bottom-6">
+            <div className="sticky z-40 border-8 border-transparent bottom-6">
                 <div className="flex items-center justify-around w-full py-4 text-sm rounded-3xl bg-gradient-to-b from-gray-800 to-gray-900">
                     <a 
                         onClick={()=>{

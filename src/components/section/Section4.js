@@ -1,10 +1,8 @@
 import React from 'react'
-import Image from 'next/image';
-import CardKhawin from '@/assets/mainCard.png'
 
 export const Section4 = () => {
     return (
-        <section className="h-[45vh] bg-center bg-cover  mb-12 " >
+        <section className="h-full mb-12 bg-center bg-cover " >
             <div className=""  data-aos="fade-down" data-aos-delay="700">
                 <h1 className="pb-5 text-2xl font-medium text-center text-primary-500">Aturcara Majlis</h1>
                 <div className="flex flex-col px-6 py-4 mx-5 border border-black rounded-lg bg-primary-50">
