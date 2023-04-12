@@ -34,7 +34,7 @@ export const Section6 = () => {
         <>
         <section className="h-[60vh] bg-center bg-cover pb-12">
             <div className=""  data-aos="fade-down" data-aos-delay="200">
-                <h1 className="text-2xl font-medium text-center text-primary-500">Guestbook</h1>
+                <h1 className="pb-6 text-2xl font-medium text-center text-primary-500">Guestbook</h1>
                 <div className="flex flex-col mx-5 overflow-auto border border-black rounded-lg bg-primary-50 h-[50vh] relative text-center">
                     {ucapanData.map((entry, index) => (
                         <div key={index}  className="px-6">
