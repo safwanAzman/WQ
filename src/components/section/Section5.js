@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
-import Img1 from '@/assets/img1.png'
+import Img1 from '@/assets/img1.jpg'
+import Img2 from '@/assets/img2.jpg'
+import Img3 from '@/assets/img3.jpg'
 import { Carousel } from 'react-responsive-carousel';
 
 export const Section5 = () => {
@@ -55,9 +57,9 @@ export const Section5 = () => {
                 <Carousel autoPlay infiniteLoop showThumbs={false} showStatus={false} dynamicHeight>
                     <div>
                         <Image
-                            src="https://source.unsplash.com/random/301x301/?1"
+                            src={Img1}
                             alt="Vercel Logo"
-                            className="w-auto h-full"
+                            className="w-auto h-96"
                             width={500}
                             height={500}
                             priority
@@ -65,9 +67,9 @@ export const Section5 = () => {
                     </div>
                     <div>
                         <Image
-                            src="https://source.unsplash.com/random/301x301/?2"
+                            src={Img2}
                             alt="Vercel Logo"
-                            className="w-auto h-full"
+                            className="w-auto h-96"
                             width={500}
                             height={500}
                             priority
@@ -75,9 +77,9 @@ export const Section5 = () => {
                     </div>
                     <div>
                         <Image
-                            src="https://source.unsplash.com/random/301x301/?3"
+                            src={Img3}
                             alt="Vercel Logo"
-                            className="w-auto h-full"
+                            className="w-auto h-96"
                             width={500}
                             height={500}
                             priority
