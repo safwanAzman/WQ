@@ -17,9 +17,9 @@ module.exports = (phase) => {
 
   const env = {
     HOST_KEY: (() => {
-      if (isDev) return 'https://c823-175-144-132-169.ngrok-free.app/api/';
+      if (isDev) return 'https://5bd5-175-144-132-169.ngrok-free.app/api/';
       if (isProd) {
-        return 'https://c823-175-144-132-169.ngrok-free.app/api/';
+        return 'https://5bd5-175-144-132-169.ngrok-free.app/api/';
       }
       if (isStaging) return '';
       return 'HOST_KEY:not (isDev,isProd && !isStaging,isProd && isStaging)';
