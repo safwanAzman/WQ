@@ -7,7 +7,7 @@ export const Section1 = () => {
     return (
         <section className="relative h-screen pb-12 text-white bg-center bg-cover" 
             style={{ backgroundImage: `url(${MainBg.src})` }}>
-            <div className="absolute inset-0 flex flex-col items-center pt-[10%] h-screen p-4 bg-black/80">
+            <div className="absolute inset-0 flex flex-col items-center pt-[10%] h-screen p-4 bg-black/70">
                 <div className="space-y-16 text-center">
                     <div className="text-lg text-gray-200 myFont" data-aos="fade-down" data-aos-delay="100">
                         Walimatul Urus
