@@ -50,9 +50,9 @@ export const Section6 = () => {
                         ) : (
                             ucapanData.map((entry, index) => (
                                 <div key={index}  className="px-6">
-                                    <div className="py-4 border-b border-primary ">
+                                    <div className="py-4 border-b border-primary-900 ">
                                         <h1 className="text-xl font-semibold text-primary">{entry.nama}</h1>
-                                        <h1 className="text-gray-600">{entry.ucapan}</h1>
+                                        <h1 className="text-gray-300">{entry.ucapan}</h1>
                                     </div>
                                 </div>
                             ))

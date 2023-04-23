@@ -23,13 +23,13 @@ export const Lokasi = ({onClick}) => {
                 <div className="mt-4 space-y-2">
                     <a
                         href={item.waze}
-                        className="flex justify-center px-8 py-3 text-sm font-medium transition bg-gray-800 rounded text-primary-100 hover:scale-100 focus:outline-none focus:ring active:bg-gray-700"
+                        className="flex justify-center px-8 py-3 text-sm font-medium text-white transition bg-black rounded hover:scale-100 focus:outline-none "
                         >
                         Waze
                     </a>
                     <a
                         href={item.google}
-                        className="flex justify-center px-8 py-3 text-sm font-medium transition bg-white border-2 rounded border-primary-500 text-primary-800 hover:scale-100 focus:outline-none focus:ring active:bg-primary-800"
+                        className="flex justify-center px-8 py-3 text-sm font-medium text-black transition bg-white border-2 border-black rounded hover:scale-100 focus:outline-none"
                         >
                         Google Map
                     </a>
