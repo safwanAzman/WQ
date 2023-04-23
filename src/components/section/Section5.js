@@ -9,7 +9,7 @@ export const Section5 = () => {
     });
 
     useEffect(() => {
-        const targetDate = new Date('2021-04-04T00:00:00');
+        const targetDate = new Date('2024-04-04T00:00:00');
         const countdown = setInterval(() => {
             const currentTime = new Date().getTime();
             const distance = targetDate - currentTime;

@@ -10,7 +10,7 @@ export const Section2 = () => {
             <div  className="flex flex-col items-center justify-center text-center bg-black/80">
                 <div className="px-8 py-2">
                     <div data-aos="fade-down" data-aos-delay="400">
-                    <h1 className="pt-12 pb-8 text-3xl border-b-[0.5px]">بِسْمِ اللَّـهِ الرَّ‌حْمَـٰنِ الرَّ‌حِيمِ</h1>
+                    <h1 className="pt-12 pb-8 text-3xl">بِسْمِ اللَّـهِ الرَّ‌حْمَـٰنِ الرَّ‌حِيمِ</h1>
                     </div>
                     
                     <div className="pt-4 space-y-1 " data-aos="fade-down" data-aos-delay="700">
