@@ -65,7 +65,7 @@ export const Section6 = () => {
                                     setTab('1')
                                 }
                             }}
-                            className="flex items-center justify-center w-full px-8 py-3 text-sm font-medium text-white transition border rounded bg-primary hover:scale-100" type="submit">
+                            className="flex items-center justify-center w-full px-8 py-3 text-sm font-medium text-white transition bg-black border rounded bg-primary hover:scale-100" type="submit">
                             <div className="animate__animated animate__swing animate__infinite">
                                 <FontAwesomeIcon className="mr-3 text-xl text-white " icon={faHandPointRight} />
                             </div>
