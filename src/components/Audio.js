@@ -10,11 +10,11 @@ export const Audio = ({ isPlayingProp,audioRef,handlePause,handlePlay }) => {
         <div className=" z-50 fixed right-2 md:right-auto w-none md:w-[400px] flex items-end justify-end  bottom-[8rem] ">
         <audio ref={audioRef} src={mainAudio} autoPlay loop />
             {isPlayingProp ? (
-                <button onClick={handlePause} className="flex items-center justify-center w-10 h-10 mx-2 rounded-full shadow-xl bg-gradient-to-b from-gray-800 to-gray-900">
+                <button onClick={handlePause} className="flex items-center justify-center w-10 h-10 mx-2 border rounded-full shadow-xl bg-gradient-to-t from-black to-gray-900">
                     <LottieMusicAnimated />
                 </button>
             ) : (
-                <button onClick={handlePlay} className="flex items-center justify-center w-10 h-10 mx-2 rounded-full shadow-xl bg-gradient-to-b from-gray-800 to-gray-900">
+                <button onClick={handlePlay} className="flex items-center justify-center w-10 h-10 mx-2 border rounded-full shadow-xl bg-gradient-to-b from-black to-gray-900">
                     <FontAwesomeIcon className="text-sm text-primary-300" icon={faVolumeXmark} />
                 </button>
             )}

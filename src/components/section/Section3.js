@@ -1,11 +1,9 @@
-import React from 'react'
-import Image from 'next/image';
-import BgSection3 from '@/assets/bgsection3.png'
+import React from 'react';
 
 export const Section3 = () => {
     return (
-        <section className="h-[40vh] bg-center bg-cover mb-12 flex flex-col items-center justify-center text-center"
-            style={{ backgroundImage: `url(${BgSection3.src})` }}>
+        <section className="h-[40vh] bg-center bg-cover mb-12 flex flex-col items-center justify-center text-center text-white myFont 
+        bg-gradient-to-b from-black to-black border mx-4 rounded-lg">
                 <div className="space-y-1 " data-aos="fade-down" data-aos-delay="700">
                         <h1 className="text-3xl">بِسْمِ اللَّهِ الرَّحْمَـٰنِ الرَّحِيمِ</h1>
                         <div className="px-5 pt-4">

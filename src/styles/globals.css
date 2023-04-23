@@ -2,32 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
-.swal2-styled.swal2-confirm {
-  border: 0;
-  border-radius: 0.25em;
-  background: initial;
-  background-color: #0f172a !important;
-  color: #fff;
-  font-size: 1em;
-}
-
-.swal2-popup {
-  display: none;
-  position: relative !important;
-  box-sizing: border-box !important;
-  grid-template-columns: minmax(0, 100%) !important;
-  width: 32em !important;
-  max-width: 100% !important;
-  padding: 0 0 1.25em !important;
-  border: none !important;
-  border-radius: 5px !important;
-  background: rgba(255, 255, 255, 0.6) !important;
-  color: #545454 !important;
-  font-family: inherit !important;
-  font-size: 1rem  !important;
-  backdrop-filter: blur(10px) !important;
-}
-
 .form-style{
   @apply appearance-none  border border-gray-300 text-gray-900 text-sm md:text-xs rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full px-2.5 py-2.5 focus:outline-none 
+}
+
+@font-face {
+  font-family: ForumRegular;
+  src: url('../assets/fonts/Forum-Regular.ttf');
+}
+
+@font-face {
+  font-family: PinyonScriptRegular;
+  src: url('../assets/fonts/PinyonScript-Regular.ttf');
+}
+
+.myFont{
+  font-family: ForumRegular;
+}
+.mainfont{
+  font-family: PinyonScriptRegular;
+}
+
+.containercustom {
+  overflow: hidden;
+}
+
+.sliding-background {
+  background: url("../assets/countingBg.png") repeat-y;
+  -webkit-animation: bgScroll 600s linear infinite;
+  animation: bgScroll 600s linear infinite;
+  height: 100%;
+  background-size: cover;
+  position: relative;
+}
+
+@keyframes bgScroll{  
+  0% {
+      background-position: 0 0;
+  }
+  100% {
+      background-position: 0 10000%;
+ }
 }
