@@ -13,7 +13,7 @@ export const Section2 = () => {
                     <h1 className="pt-12 pb-8 text-3xl">بِسْمِ اللَّـهِ الرَّ‌حْمَـٰنِ الرَّ‌حِيمِ</h1>
                     </div>
                     
-                    <div className="pt-4 space-y-1 " data-aos="fade-down" data-aos-delay="700">
+                    <div className="pt-8 space-y-1 " data-aos="fade-down" data-aos-delay="700">
                         <h1>Dengan penuh Kesyukuran,kami</h1>
                         <div className="pt-4 font-bold text-stone-100">
                         <h1>HJ AZMAN BIN RAFIEI</h1>
