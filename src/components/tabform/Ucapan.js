@@ -59,7 +59,7 @@ export const Ucapan = ({onClick,onSubmitted}) => {
                                 onClick={()=>{
                                     handleSubmit();
                                 }}
-                                className="w-full px-8 py-3 text-sm font-medium transition bg-gray-800 rounded text-primary-100 hover:scale-100 focus:outline-none focus:ring active:bg-gray-700"
+                                className="w-full px-8 py-3 text-sm font-medium text-white transition bg-black rounded hover:scale-100 focus:outline-none "
                                 type="submit"
                                 >
                                 {loading ? 'Loading...' : 'Hantar'}
