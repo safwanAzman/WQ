@@ -21,7 +21,7 @@ export const BottomTab = () => {
                             }
                         }}
                         href="" className={`flex flex-col items-center justify-center space-y-2 cursor-pointer
-                            ${tab  != '1' ? 'text-primary-300' : 'text-white' } `}>
+                            ${tab  != '1' ? 'text-white' : 'text-white' } `}>
                         <FontAwesomeIcon  className="text-xl" icon={faArrowsRotate} />
                         <p>Refresh</p>
                     </a>
@@ -32,7 +32,7 @@ export const BottomTab = () => {
                             }
                         }}
                         href="#Rsvp"  className={`flex flex-col items-center justify-center space-y-2 cursor-pointer
-                        ${tab  != '2' ? 'text-primary-300' : 'text-white' } `}>
+                        ${tab  != '2' ? 'text-white' : 'text-white' } `}>
                         <FontAwesomeIcon className="text-xl" icon={faAddressBook} />
                         <p>Rsvp</p>
                     </a>
@@ -43,7 +43,7 @@ export const BottomTab = () => {
                             }
                         }}
                         href="#contact" className={`flex flex-col items-center justify-center space-y-2 cursor-pointer
-                        ${tab  != '3' ? 'text-primary-300' : 'text-white'  } `}>
+                        ${tab  != '3' ? 'text-white' : 'text-white'  } `}>
                         <FontAwesomeIcon className="text-xl" icon={faPhoneVolume}/>
                         <p>Hubungi</p>
                     </a>
@@ -54,7 +54,7 @@ export const BottomTab = () => {
                             }
                         }}
                         href="#location" className={`flex flex-col items-center justify-center space-y-2 cursor-pointer
-                        ${tab  != '4' ? 'text-primary-300' : 'text-white'  } `}>
+                        ${tab  != '4' ? 'text-white' : 'text-white'  } `}>
                         <FontAwesomeIcon className="text-xl" icon={faLocationDot}/>
                         <p>Lokasi</p>
                     </a>

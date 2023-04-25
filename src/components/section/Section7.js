@@ -14,7 +14,7 @@ export const Section7 = () => {
             </div>
 
             <div className='flex justify-center pt-10 pb-2 text-xs text-center '  data-aos="fade-down" data-aos-duration="500">
-                &copy; Coded by SafwanAzman
+                <p>&copy; Coded by </p> <a href="https://portfolio-v2-self.vercel.app/"  target="_blank"className="pl-1 border-b"> SafwanAzman</a>
             </div>
         </section>
     )

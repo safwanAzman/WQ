@@ -75,7 +75,7 @@ export default function Home() {
   };
   
   return (
-    <main className="flex justify-center min-h-screen bg-gray-100">
+    <main className="flex justify-center min-h-screen bg-black">
       {showBlackScreen && (
       <div className="fixed inset-0 flex flex-col items-center justify-center h-screen p-4 bg-black">
         <div className="relative text-white">
