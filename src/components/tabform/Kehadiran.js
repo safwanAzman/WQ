@@ -4,11 +4,19 @@ import { Input } from '@/components/form/Input';
 import callapi from '@/helper/axios';
 import { Formik } from 'formik';
 import { toast } from 'react-toastify';
+import * as Yup from "yup";
 
 
 export const Kehadiran = ({onClick}) => {
     const [kehadiran,setKehadiran] = useState( '')
     const [loading, setLoading] = useState(false);
+
+    const validate = Yup.object().shape({
+        name: Yup.string().required("Nama Required"),
+        no_tel: Yup.string().required("Tel No Required"),
+        attendance: Yup.string().required("Kehadiran Required"),
+        total: Yup.string().required("Jumlah Kehadiran Required"),
+    });
     
     const sumbit = async (values) => {
         try {
@@ -27,6 +35,7 @@ export const Kehadiran = ({onClick}) => {
     return (
         <>
         <Formik
+            validationSchema={validate}
             initialValues={{
                 name:"", 
                 no_tel: "",
@@ -38,7 +47,7 @@ export const Kehadiran = ({onClick}) => {
                 sumbit(values);
             }}
             >
-            {({ handleChange, handleSubmit,setFieldValue}) => (
+            {({ handleChange, handleSubmit,setFieldValue,errors,touched}) => (
             <>
                 <div className='px-4 pt-5'>
                     <div className="flex items-start justify-end -mt-4">
@@ -52,6 +61,7 @@ export const Kehadiran = ({onClick}) => {
                         label="Nama"
                         id="name"
                         onChange={handleChange}
+                        errorMessage={errors.name && touched.name ? errors.name : null}
                     />
                     <Input
                         type="number"
@@ -60,6 +70,7 @@ export const Kehadiran = ({onClick}) => {
                         inputmode="numeric"
                         id="no_tel"
                         onChange={handleChange}
+                        errorMessage={errors.no_tel && touched.no_tel ? errors.no_tel : null}
                     />
                     <div className="mb-4">
                     <label  className="block text-xs font-medium text-gray-700">
@@ -91,6 +102,7 @@ export const Kehadiran = ({onClick}) => {
                                 Tidak
                             </button>
                         </div>
+                        <p className="text-xs text-red-500">{errors.attendance && touched.attendance ? errors.attendance : null}</p>
                     </div>
                     <Input
                         type="number"
@@ -100,6 +112,7 @@ export const Kehadiran = ({onClick}) => {
                         inputmode="numeric"
                         id="total"
                         onChange={handleChange}
+                        errorMessage={errors.total && touched.total ? errors.total : null}
                     />
                     <div className="mt-8">
                     <button

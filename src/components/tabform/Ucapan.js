@@ -3,10 +3,16 @@ import { Input } from '@/components/form/Input';
 import callapi from '@/helper/axios';
 import { Formik } from 'formik';
 import { toast } from 'react-toastify';
+import * as Yup from "yup";
 
 
 export const Ucapan = ({onClick,onSubmitted}) => {
     const [loading, setLoading] = useState(false);
+
+    const validate = Yup.object().shape({
+        nama: Yup.string().required("Nama Required"),
+        ucapan: Yup.string().required("Ucapan Required"),
+    });
     
     const sumbit = async (values) => {
         try {
@@ -26,6 +32,7 @@ export const Ucapan = ({onClick,onSubmitted}) => {
     return (
         <>
             <Formik
+                validationSchema={validate}
                 initialValues={{
                     nama:"", 
                     ucapan: ""
@@ -34,7 +41,7 @@ export const Ucapan = ({onClick,onSubmitted}) => {
                     sumbit(values);
                 }}
                 >
-                {({ handleChange, handleSubmit,values}) => (
+                {({ handleChange, handleSubmit,errors,touched}) => (
                     <>
                         <div className='px-4 pt-5'>
                             <Input
@@ -43,6 +50,7 @@ export const Ucapan = ({onClick,onSubmitted}) => {
                                 label="Nama"
                                 onChange={handleChange}
                                 id='nama'
+                                errorMessage={errors.nama && touched.nama ? errors.nama : null}
                             />
                             <div className="mb-4">
                                 <label  className="block pb-1 text-xs font-medium text-gray-700">
@@ -53,6 +61,7 @@ export const Ucapan = ({onClick,onSubmitted}) => {
                                     id='ucapan'
                                     rows="7" 
                                     className="form-style"></textarea>
+                                <p className="text-xs text-red-500">{errors.ucapan && touched.ucapan ? errors.ucapan : null}</p>
                             </div>
                             <div className="mt-8">
                             <button
