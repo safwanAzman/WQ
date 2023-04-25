@@ -13,8 +13,8 @@ export const Section7 = () => {
                 </h1>
             </div>
 
-            <div className='flex justify-center pt-32 pb-2 text-xs text-center '>
-            &copy; Coded by SafwanAzman
+            <div className='flex justify-center pt-10 pb-2 text-xs text-center '>
+                &copy; Coded by SafwanAzman
             </div>
         </section>
     )
