@@ -14,6 +14,12 @@ export const Section5 = () => {
             const currentTime = new Date().getTime();
             const distance = targetDate - currentTime;
 
+            if (distance <= 0) {
+                setTimeRemaining({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+                clearInterval(countdown);
+                return;
+            }
+
             const days = Math.floor(distance / (1000 * 60 * 60 * 24));
             const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
