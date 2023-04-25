@@ -13,7 +13,7 @@ export const Section7 = () => {
                 </h1>
             </div>
 
-            <div className='flex justify-center pt-10 pb-2 text-xs text-center '>
+            <div className='flex justify-center pt-10 pb-2 text-xs text-center '  data-aos="fade-down" data-aos-duration="500">
                 &copy; Coded by SafwanAzman
             </div>
         </section>
