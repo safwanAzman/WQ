@@ -27,7 +27,7 @@ export const Section1 = () => {
                     <div className="space-y-2 text-gray-200 myFont" data-aos="fade-down" data-aos-delay="250">
                         <div className="text-sm">
                             Mengundang untuk hadir dipernikahan kami pada<br/>
-                            Minggu,16 December 1998
+                            Minggu, 16 December 1998
                         </div>
                     </div>
                     <div className="flex justify-center" data-aos="fade-down" data-aos-delay="300">
