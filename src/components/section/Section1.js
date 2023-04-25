@@ -31,7 +31,7 @@ export const Section1 = () => {
                         </div>
                     </div>
                     <div className="flex justify-center" data-aos="fade-down" data-aos-delay="300">
-                        <a href="#" className="flex items-center justify-center px-8 py-3 space-x-2 text-base text-white border rounded-lg ">
+                        <a href="#ucapansection" className="flex items-center justify-center px-8 py-3 space-x-2 text-base text-white border rounded-lg ">
                             <p>Ucapan</p>
                             <FontAwesomeIcon icon={faArrowDown} />
                         </a>

@@ -34,7 +34,7 @@ export const Section6 = () => {
     }, [getData]);
     return (
         <>
-        <section className="h-[60vh] mt-40  bg-center bg-cover  myFont text-white">
+        <section className="h-[60vh] mt-40  bg-center bg-cover  myFont text-white" id="ucapansection">
             <div className=""  data-aos="fade-down" data-aos-delay="200">
                 <h1 className="pb-6 text-3xl font-medium text-center text-primary">Guestbook</h1>
                 <div className="flex flex-col mx-5 overflow-auto border rounded-lg  h-[50vh] relative text-center">

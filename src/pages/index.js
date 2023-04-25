@@ -10,7 +10,8 @@ import { Section4 } from '@/components/section/Section4';
 import { Section5 } from '@/components/section/Section5';
 import { Section6 } from '@/components/section/Section6';
 import { Section7 } from '@/components/section/Section7';
-import Swal from 'sweetalert2';
+import {faHandPointRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { ToastContainer } from 'react-toastify';
 
 import Splash1 from '@/assets/splash/1.jpg';
@@ -81,20 +82,23 @@ export default function Home() {
           <Image
             src={images[currentImageIndex]}
             alt="Image"
-            className="w-auto rounded-3xl h-96"
+            className={`w-auto rounded-3xl h-96`}
             width=""
             height=""
             priority
           />
-          <div className="absolute inset-0 flex items-center justify-center text-xl font-bold text-white bg-black/50">
+          <div className="absolute inset-0 flex items-center justify-center text-xl font-bold text-white bg-black/50 myFont">
             <h1>{currentPercentage}%</h1>
           </div>
         </div>
         {currentPercentage === 100 && (
             <button
-              className="px-4 py-2 mt-12 text-sm text-white border rounded-lg"
+              className="flex items-center justify-center px-4 py-2 mt-6 space-x-2 text-sm text-white border rounded-lg"
               onClick={handleOpenButtonClick}
             >
+              <div className="animate__animated animate__swing animate__infinite">
+                  <FontAwesomeIcon className="mr-3 text-xl text-white " icon={faHandPointRight} />
+              </div>
               Open Card
             </button>
           )}
@@ -122,6 +126,7 @@ export default function Home() {
         </div>
       </div>
       )}
+
     </main>
   )
 }
