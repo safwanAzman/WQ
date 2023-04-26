@@ -21,7 +21,7 @@ export const Kehadiran = ({onClick}) => {
     const sumbit = async (values) => {
         try {
             setLoading(true);
-            const res = await callapi.post('/kehadiran/create',values);
+            const res = await callapi.post('/kehadiran/safwan/create',values);
             const data = await res.data;
             onClick();
             toast("🫰 Maklumat anda telah berjaya dihantar 🫰");

@@ -9,7 +9,7 @@ const SenaraiKehadiran = () => {
 
     const getData = async () => {
         try {
-            const res = await callapi.get('/kehadiran/index');
+            const res = await callapi.get('/kehadiran/safwan/index');
             const data = await res.data;
             setKehadiran(data.data);
         } catch (e) {

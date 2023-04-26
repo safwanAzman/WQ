@@ -15,7 +15,7 @@ export const Section6 = () => {
     const getData = useCallback(async () => {
         setLoading(true);
         try {
-            const res = await callapi.get('/ucapan/index');
+            const res = await callapi.get('/ucapan/safwan/index');
             const data = await res.data;
             setUcapan(data.data);
         } catch (e) {

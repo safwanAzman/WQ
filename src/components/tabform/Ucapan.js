@@ -17,7 +17,7 @@ export const Ucapan = ({onClick,onSubmitted}) => {
     const sumbit = async (values) => {
         try {
             setLoading(true);
-            const res = await callapi.post('/ucapan/create',values);
+            const res = await callapi.post('/ucapan/safwan/create',values);
             const data = await res.data;
             onClick();
             onSubmitted();
